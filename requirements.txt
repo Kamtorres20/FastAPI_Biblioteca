@@ -1,0 +1,9 @@
+fastapi
+psycopg2
+pytest
+pytest-mock
+pytest-env
+sqlmodel
+uvicorn
+dependency-injector
+coverage
