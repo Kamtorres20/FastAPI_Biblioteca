@@ -1,6 +1,6 @@
-from services.ibook_service import IBookService
-from utils.utils import Utils
-from schemas.schemas import BookSchemaIn
+from services import IBookService
+from utils import Utils
+from schemas import BookSchemaIn
 
 class BookController:
     def __init__(self, book_service: IBookService) -> None:

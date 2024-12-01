@@ -1,4 +1,4 @@
-from schemas.schemas import BookSchema
+from schemas import BookSchema
 
 class Utils:
     @classmethod

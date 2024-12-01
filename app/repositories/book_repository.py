@@ -1,6 +1,6 @@
 from sqlmodel import Session,select
-from schemas.schemas import BookSchema
-from models.book import Book
+from schemas import BookSchema
+from models import Book
 
 class BookRepository:
     def __init__(self, session_factory: Session):

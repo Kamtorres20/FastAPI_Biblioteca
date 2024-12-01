@@ -4,9 +4,9 @@ from typing import Optional
 from db import PostgreSQL
 from dependency_injector import containers, providers
 from sqlalchemy import Engine
-from repositories.book_repository import BookRepository
-from services.book_service import BookService
-from controllers.book_controller import BookController
+from repositories import BookRepository
+from services import BookService
+from controllers import BookController
 
 class DatabaseContainer(containers.DeclarativeContainer):
     posSQL = providers.Singleton(

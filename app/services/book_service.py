@@ -1,5 +1,5 @@
 from .ibook_service import IBookService
-from schemas.schemas import BookSchemaIn, UpdateBookSchema
+from schemas import BookSchemaIn, UpdateBookSchema
 from models import book
 
 class BookService:

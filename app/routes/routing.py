@@ -1,7 +1,7 @@
 from fastapi.routing import APIRouter
-from schemas.schemas import BookSchemaIn,UpdateBookSchema
+from schemas import BookSchemaIn,UpdateBookSchema
 import container
-from controllers.book_controller import BookController
+from controllers import BookController
 
 
 router = APIRouter(prefix='/api/v1')
