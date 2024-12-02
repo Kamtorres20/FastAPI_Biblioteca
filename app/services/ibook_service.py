@@ -14,13 +14,21 @@ class IBookService(metaclass=ABCMeta):
         raise NotImplementedError
     
     @abstractmethod
-    def update_book(self, old_book, new_book):
+    def update_book(self, id:int, new_book):
         raise NotImplementedError
     
     @abstractmethod
-    def delete_book(self, book):
+    def delete_book(self, id:int):
         raise NotImplementedError    
     
     @abstractmethod
     def get_book_by_Title(self, title:str):
         raise NotImplementedError 
+    
+    @abstractmethod
+    def get_book_contains_Title(self, title:str):
+        raise NotImplementedError 
+    
+    @abstractmethod
+    def get_book_contains_autor(self, autor:str):
+        raise NotImplementedError    

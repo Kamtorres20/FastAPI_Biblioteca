@@ -16,12 +16,18 @@ class BookService:
     def create_book(self, book:BookSchemaIn):
         return self.book_repository.create_book(book)
     
-    def update_book(self, old_book:book, new_book:UpdateBookSchema):
-        return self.book_repository.update_book(old_book,new_book)    
+    def update_book(self, id:int, new_book:UpdateBookSchema):
+        return self.book_repository.update_book(id,new_book)    
 
-    def delete_book(self, book:book):
-        return self.book_repository.delete_book(book)   
+    def delete_book(self, id:int):
+        return self.book_repository.delete_book(id)   
 
     def get_book_by_Title(self, title:str):
         return self.book_repository.get_book_by_Title(title)      
+
+    def get_book_contains_Title(self, title:str):
+        return self.book_repository.get_book_contains_Title(title)     
+    
+    def get_book_contains_autor(self, autor:str):
+        return self.book_repository.get_book_contains_autor(autor)      
     
